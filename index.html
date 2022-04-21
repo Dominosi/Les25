@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Verplichte metatags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+    <!--java-->
+    <script src="http://code.jquery.com/jquery-3.1.0.min.js">
+    </script>
+    <script src="http://code.jquery.com/ui/1.12.0/jquery-ui.min.js">
+    </script>
+    <!--accordeon-->
+    <link rel="stylesheet"
+    href="http://code.jquery.com/ui/1.12.0/themes/base/jquery-ui.css">
+    <script type="text/javascript">
+    $(function() {
+    $("#accordion").accordion();
+    });
+    </script>
+
+    <!--druknop alert-->
+    <script type="text/JavaScript">
+    function bouton1() {
+      window.alert("Super! Nous sommes contents de vous avoir aidé. N'hésitez pas à revenir nous voir!");
+    }
+    function bouton2() {
+      window.alert("Ooh, toutes nos excuses! Faites-nous savoir ce qu'il vous manque!");
+    }
+    </script>
+
+    <!-- responsive -->
+    <style>
+    [class*="col-"] {
+      float: left;
+      padding: 15px;
+    }
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    @media only screen and (max-width: 800px) {
+      /* For mobile phones: */
+      [class*="col-"] {
+        width: 100%;
+      }
+    }
+    </style>
+
+    <style type="text/css">
+      * {
+      box-sizing: border-box;
+      }
+      header {
+        font-size: 24px;
+        background-color: lavenderblush;
+        text-align: center;
+        padding: 8px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3)
+      }
+      #accordion {
+        font-family: 'Kalam', cursive;
+        font-size: 18px;
+        color: indigo;
+        background-color: lavenderblush;
+        margin: 20px 0px 20px 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3)
+        cursor: pointer;
+      }
+      .ui-accordion-header {
+        color: white;
+        background-color: plum;
+      }
+      .ui-accordion-header.ui-state-active {
+        background-color: mediumpurple;
+      }
+      .ui-accordion-content {
+        color: indigo;
+        background-color: lavenderblush;
+      }
+      body {
+      font-family: 'Kalam', cursive;
+      margin: 20px;
+      color: indigo;
+      background-color: lavender;
+      }
+      img {
+        border-style: solid;
+        border-color: plum;
+        border-width: 5px;
+        margin: 10px 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+      }
+      .encadre {
+        background-color: lavenderblush;
+        margin: 10px 0px 10px 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3)
+      }
+      .encadre:after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .encadre2 {
+        font-size: 16px;
+        text-align: center;
+        background-color: lavenderblush;
+        padding: 10px;
+        margin: 10px 0px 20px 0px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3)
+      }
+      input {
+        font-size: 16px;
+        font-family: 'Kalam', cursive;
+        background-color: lavender;
+        color: indigo;
+        padding: 5px;
+        border-radius: 5px;
+        width: 80px;
+      }
+      footer{
+        text-align: center;
+        font-size: 13px;
+        background-color: lavenderblush;
+        padding: 8px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3)
+      }
+    </style>
+
+    <title>La lavande</title>
+  </head>
+
+  <body>
+
+    <header>
+        <img src="images/imagevect.png" alt="fleur lavande" title="fleur lavande"
+        style="width:15%; border-style: none; box-shadow:none;">
+        <h1>LA LAVANDE</h1>
+    </header>
+
+    <div class="encadre row">
+        <div class="col-3">
+          <img src="images/fleur.jpg" alt="fleur lavande" title="fleur lavande" style="width:100%">
+        </div>
+        <div class="col-3">
+          <img src="images/champ.jpg" alt="champ lavande" title="champ lavande"style="width:100%">
+        </div>
+        <div class="col-3">
+          <img src="images/huile.jpg" alt="huile essentielle lavande" title="huile essentielle lavande" style="width:100%">
+        </div>
+        <div class="col-3">
+          <img src="images/bouquet.jpg" alt="bouquet lavande" title="bouquet lavande"style="width:100%">
+        </div>
+    </div>
+
+    <div id="accordion">
+    <h3>La plante</h3>
+    <div>
+    <p>Ce sont des arbrisseaux dicotylédones, à fleurs le plus souvent mauves ou violettes disposées en épis,
+      dont la plupart des espèces très odorantes, sont largement utilisées dans toutes les branches de la parfumerie,
+      en particulier le lavandin (Lavandula ×intermedia). Elles poussent surtout sur les sols calcaires secs et ensoleillés,
+      à l'exception de Lavandula stoechas, qui préfère les sols siliceux.
+      <br><br>
+      Venue de l'ouest du bassin méditerranéen, la lavande était déjà utilisée par les Romains pour conserver le linge et
+      parfumer les bains. En Provence, la lavande fut utilisée au Moyen Âge, pour la composition de parfums et de médicaments,
+      mais c'est à partir du xixe siècle que sa culture se développa.
+      <br>
+      Ce genre botanique a été décrit pour la première fois en 1753 par le naturaliste suédois Carl von Linné (1707-1778).
+      <br>
+      L'essor de la production française d'huile essentielle de lavande est lié à l'implantation de parfumeries dans la
+      région de Grasse. La mise en culture organisée systématique du lavandin, dans les années 1950, prit ensuite le relais.
+      <br><br>
+      La culture de la lavande du Quercy apparut également sur les derniers versants du sud-ouest du Massif central avant
+      1936 à Roquecor en Tarn-et-Garonne3. Celle-ci atteignit son apogée dans les années 1950 et 1960, et seuls quelques
+      cultivateurs perpétuent encore cette tradition.</p>
+    </div>
+    <h3>La récolte</h3>
+    <div>
+    <p>La récolte de la lavande se fait avant l'ouverture de la fleur de fin juillet à fin août, pour les lavandes « vraies ».
+      À part l’aspic et la lavande "vraie" qui sont sauvages, les plantes sont généralement cultivées.
+      Il existe cependant quelques distillations de lavandes sauvages de montagne, véritable lavande "Vraie", destinées à
+      l’aromathérapie et les quantités en sont très limitées. La récolte a lieu en été, car les fortes chaleurs favorisent
+      la montée de l’essence dans les cellules et les glandes sécrétrices de la fleur. Les brins sont plus odoriférants s'ils
+       sont cueillis juste avant l'ouverture des fleurs. Après, l'essentiel de l'arôme se perd.
+       <br>
+       Les lavandes du groupe stoechas sont plus précoces : elles sont récoltées de mars à mai à l’état sauvage, mais elles
+       sont plus rarement exploitées. Pour les cultures, la récolte s’effectue mécaniquement, sauf pour les bouquets qui
+       sont coupés manuellement à la faucille.
+       <br><br>
+       Les lavandes clonales (issues d’un individu et multipliées par bouturage) arrivent à maturité en même temps,
+       contrairement aux lavandes de population (non clonales) qui ne mûrissent pas de façon homogène, car chaque plante est
+       un individu différent de son voisin. Les lavandes clonées sont plus susceptibles d'être massivement attaquées par des
+       insectes ravageurs. Hormis quelques espèces, dont le chrysomèle de la lavande (ou du romarin), Chrysolina americana,
+       la lavande a peu de prédateurs, en raison de sa teneur en substances répulsives.
+       <br>
+       L’huile essentielle serait de meilleure qualité en altitude, mais le rendement y est plus faible, et l’altitude
+       augmente la teneur en esters.</p>
+    </div>
+    <h3>Les applications</h3>
+    <div>
+    <p><i>Parfumerie</i><br>
+    C'est bien sûr la parfumerie qui fait le plus gros usage de la lavande. On peut tout parfumer avec elle, depuis les
+    savonnettes jusqu'aux détergents et au papier hygiénique. Dans les parfums proprement dits, la lavande est surtout
+    réservée aux hommes, soit en soliflore dans les eaux de toilette, soit en note de cœur dans les eaux de Cologne.
+    <br><br>
+    <i>Propriétés médicinales</i><br>
+    La lavande a des propriétés antispasmodiques, sédatives et diurétiques.
+    En phytothérapie, on la recommande pour combattre l'anxiété, la nervosité et les insomnies, ainsi que pour soulager les
+    rhumatismes et soigner les infections des voies respiratoires.
+    L'huile essentielle de lavande est antiseptique et bactéricide. Appliquée pure sur la peau elle soulagerait les brûlures
+    et les piqûres d'insectes. Appliquée sur les tempes, elle soulagerait les douleurs migraineuses.
+    <br><br>
+    <i>Utilisation culinaire</i><br>
+    On peut faire infuser des fleurs de lavande dans du lait, utilisé ensuite pour la préparation de glace ou de crème à la
+    lavande.</p>
+    </div>
+    </div>
+
+    <div class="encadre2">
+      Cette page vous a-t-elle aidé?
+      <br>
+      <input type="button" name="knop" value="Oui" onClick="bouton1()">
+      <input type="button" name="knop" value="Non" onClick="bouton2()">
+    </div>
+
+    <footer>All right reserved 2022 @ Dominique Sirault/Dominographics.be</footer>
+
+    <noscript>
+    Om deze website optimaal te gebruiken is het noodzakelijk om JavaScript te activeren.
+    </noscript>
+
+  </body>
+</html>
